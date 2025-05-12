@@ -1,0 +1,67 @@
+body {
+    background: rgb(23, 8, 48);
+    color: rgb(51, 174, 92);
+    font-family: cursive;
+}
+
+header {
+    background-color: rgb(54, 5, 86);
+    font-family: sans-serif;
+    padding: 1px 20px;
+    color: rgb(95, 160, 149);
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Links spread out horizontally */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(43, 195, 144);
+}
+
+.hero {
+    padding: 1em 1em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, rgb(29, 3, 37), rgb(2, 38, 27));
+    border-radius: 4px;
+    color: rgb(130, 194, 35);
+}
+
+section {
+    padding: 20px;
+}
+
+#contact{
+    color: rgb(57, 97, 91);
+}
+
+footer {
+    color: rgb(58, 9, 76);
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(21, 118, 54);
+    text-align: center;
+    padding: 1px;
+    margin-top: 2em;
+    border-radius: 6px;
+    /* what is this em*/
+
+}
+
+@media (max-width: 600px) { /* applies when width is less than 600px i.e., for mobiles */
+    nav ul {
+        flex-direction: column; /* Links stack vertically */
+        align-items: center;     /* Links are centered horizontally */
+    }
+}
